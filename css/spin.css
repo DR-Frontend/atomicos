@@ -1,28 +1,18 @@
-/* CSS BASE ===== */
-body{
-  font-size: 16px;
-  font-family: sans-serif;
-  background: linear-gradient(180deg, rgb(100, 0, 0) 0%, rgb(20, 20, 20) 100%);
-}
-
-.spin-canvas{
+.home-canvas{
   width: 100%;
   height: 100vh;
-  font-size: 5rem;
-  color: white;
-}
-.flex{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
-
 .circle{
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   position: absolute;
+  opacity: .3;
 }
 .spin{
   transform: rotate3d(0, 0, 0, 0deg);
@@ -93,9 +83,4 @@ body{
  0%{transform: rotate3d(0, 0, 0, 0deg)}
  70%{transform: rotate3d(0, 0, 0, 0deg)}
  100%{transform: rotate3d(1, 1, -1, 1080deg)}
-}
-
-form{
-  color: white;
-  flex-wrap: wrap;
 }
